@@ -2,7 +2,7 @@ import React from "react";
 import API from "../util/API";
 import SearchBox from "../components/searchbox";
 
-class topic extends React.Component {
+class Search extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -45,3 +45,5 @@ class topic extends React.Component {
         )
     }
 }
+
+export default Search;

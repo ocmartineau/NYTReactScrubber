@@ -1,8 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom" 
 import TitleBox from "./components/titlebox"
-import './App.css';
+
+
 import SearchBox from './components/searchbox/searchbox';
+import './App.css';
 
 
 const App = () =>

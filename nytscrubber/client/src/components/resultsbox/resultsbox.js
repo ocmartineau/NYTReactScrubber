@@ -8,6 +8,8 @@ class ResultsBox extends React.Component {
 
         return (
             <div>
+                <h1>Results</h1>
+                
                 
             </div>
         )
