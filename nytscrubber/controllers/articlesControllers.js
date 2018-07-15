@@ -37,7 +37,10 @@ const articlesFunctions = {
   }
 }
 
-router.get("/api/articles", articlesFunctions.findAll)
+router.get("/api/articles", articlesFunctions.findAll);
+router.post("/api/articles", articlesFunctions.create);
+router.delete("/api/articles/:id", articlesFunctions.remove)
+
 
 // If no API routes are hit, send the React app
 router.use(function (req, res) {

@@ -1,17 +1,13 @@
 const express = require("express");
+const app = express();
 const bodyParser = require("body-parser");
 
 //Requiring Mongoose for MongoDB
 const mongoose = require("mongoose");
-const articlesController = require("./controllers/articlesControllers")
+const articlesController = require("./nytscrubber/controllers/articlesControllers")
 mongoose.Promise = global.Promise;
 //Connecting to Mongoose
-mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/NYTReact",
-    {
-        useMongoClient: true
-    }
-);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/NYTReact");
 
 //Configuring body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -26,11 +22,10 @@ const cheerio = require("cheerio");
 const axios = require("axios");
 
 //Require all models
-const db = require("./models");
+const db = require("./nytscrubber/models");
 
 const PORT = process.env.PORT || 8000;
 
-const app = express();
 
 
 app.listen(PORT, function(){
