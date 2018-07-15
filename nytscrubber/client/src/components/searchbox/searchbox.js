@@ -4,7 +4,7 @@ import "./searchbox.css";
 
 class SearchBox extends React.Component {
     render () {
-        const { topic, startYear, startYear, endYear, handleInputChange, handleFormSubmit } = this.props;
+        const { topic, startYear, endYear, handleInputChange, handleFormSubmit } = this.props;
         
         return (
             <form>

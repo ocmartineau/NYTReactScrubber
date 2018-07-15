@@ -18,6 +18,7 @@ class topic extends React.Component {
     };
 
     handleFormSubmit = event => {
+        console.log("it's ruinning");
         event.preventDefault();
         API.getArticles(this.state.topic, this.state.startYear, this.state.endYear)
             .then(res => {
