@@ -1,6 +1,6 @@
 import React from "react";
-import API from "../util/API";
-import SearchBox from "../components/searchbox";
+import API from "../utils/API";
+import SearchBox from "../components/searchbox/searchbox";
 
 class Search extends React.Component {
     constructor(props) {

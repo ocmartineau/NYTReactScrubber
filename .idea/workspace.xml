@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a4d6b3a-f2e4-42ec-8b2a-85f22998565f" name="Default" comment="Ignore all node_modules everywhere instead of just at the root">
-      <change beforePath="$PROJECT_DIR$/nytscrubber/client/build/static/js/main.50ca4dc1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nytscrubber/client/build/static/js/main.50ca4dc1.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nytscrubber/controllers/articlesControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/nytscrubber/controllers/articlesControllers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nytscrubber/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/nytscrubber/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nytscrubber/client/src/pages/Search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nytscrubber/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/nytscrubber/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,10 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nytscrubber/client/src/pages/Search.js">
+      <file leaf-file-name="searchbox.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nytscrubber/client/src/components/searchbox/searchbox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="150">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -47,8 +48,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchbox.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nytscrubber/client/src/components/searchbox/searchbox.js">
+      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nytscrubber/client/src/pages/Home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="67" lean-forward="true" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nytscrubber/client/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <folding>
@@ -62,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/nytscrubber/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -93,6 +106,7 @@
       <list>
         <option value="$PROJECT_DIR$/nytscrubber/controllers/articlesControllers.js" />
         <option value="$PROJECT_DIR$/nytscrubber/.gitignore" />
+        <option value="$PROJECT_DIR$/nytscrubber/client/src/pages/Home.js" />
       </list>
     </option>
   </component>
@@ -104,6 +118,7 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/nytscrubber/client/node_modules" />
     <handled-path value="$PROJECT_DIR$/nytscrubber/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
@@ -136,6 +151,44 @@
               <item name="NYTReactScrubber" type="b2602c69:ProjectViewProjectNode" />
               <item name="NYTReactScrubber" type="462c0819:PsiDirectoryNode" />
               <item name="nytscrubber" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NYTReactScrubber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NYTReactScrubber" type="462c0819:PsiDirectoryNode" />
+              <item name="nytscrubber" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NYTReactScrubber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NYTReactScrubber" type="462c0819:PsiDirectoryNode" />
+              <item name="nytscrubber" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NYTReactScrubber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NYTReactScrubber" type="462c0819:PsiDirectoryNode" />
+              <item name="nytscrubber" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NYTReactScrubber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NYTReactScrubber" type="462c0819:PsiDirectoryNode" />
+              <item name="nytscrubber" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="searchbox" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NYTReactScrubber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NYTReactScrubber" type="462c0819:PsiDirectoryNode" />
+              <item name="nytscrubber" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -178,6 +231,7 @@
       <updated>1531660172353</updated>
       <workItem from="1531660175329" duration="1046000" />
       <workItem from="1531662210218" duration="1413000" />
+      <workItem from="1531699110653" duration="609000" />
     </task>
     <task id="LOCAL-00001" summary="Ignore all build folders">
       <created>1531663302908</created>
@@ -197,20 +251,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2459000" />
+    <option name="totallyTimeSpent" value="3068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5016376" side_tool="true" weight="0.32843652" />
-      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.4989083" visible="true" weight="0.32948583" />
-      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="4" sideWeight="0.4978166" visible="true" weight="0.32843652" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49945414" weight="0.32948583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.5010917" side_tool="true" visible="true" weight="0.32948583" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.5021834" side_tool="true" visible="true" weight="0.32843652" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -220,6 +273,7 @@
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Messages" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,40 +322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nytscrubber/client/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nytscrubber/client/build/static/js/main.50ca4dc1.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nytscrubber/controllers/articlesControllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="47" lean-forward="true" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nytscrubber/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nytscrubber/client/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nytscrubber/client/build/static/js/main.50ca4dc1.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/nytscrubber/controllers/articlesControllers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -325,7 +345,103 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nytscrubber/client/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nytscrubber/client/src/components/searchbox/searchbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nytscrubber/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nytscrubber/client/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nytscrubber/client/build/static/js/main.50ca4dc1.js" />
+    <entry file="file://$PROJECT_DIR$/nytscrubber/controllers/articlesControllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="47" lean-forward="true" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nytscrubber/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nytscrubber/client/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nytscrubber/client/build/static/js/main.50ca4dc1.js" />
+    <entry file="file://$PROJECT_DIR$/nytscrubber/controllers/articlesControllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nytscrubber/client/src/pages/Search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nytscrubber/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nytscrubber/client/src/components/searchbox/searchbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nytscrubber/client/src/pages/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="67" lean-forward="true" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nytscrubber/client/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
