@@ -1,6 +1,7 @@
 import React from "react";
 import "./list.css";
 import PropTypes from "prop-types";
+import ListItem from "../list/listItem";
 
 class List extends React.Component {
     render () {
@@ -9,6 +10,7 @@ class List extends React.Component {
                 
                 <ul className="list-group">
                     {this.props.children}
+                    <ListItem/>
                 </ul>
 
             </div>

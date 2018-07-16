@@ -60,6 +60,7 @@ class SearchBox extends React.Component {
         );
     }
 
+    
     handleTopicChange = event => {
         this.setState({ topic: event.target.value });
     };
@@ -73,6 +74,7 @@ class SearchBox extends React.Component {
     };
 
     handleFormSubmit = event => {
+        const nytData = [];
         console.log("it's running");
         event.preventDefault();
         API.getArticles(this.state.topic, this.state.startYear, this.state.endYear)
@@ -81,7 +83,10 @@ class SearchBox extends React.Component {
                     throw new Error(res.data.message);
                 }
                 this.setState({ results: res.data.response.docs });
-                console.log(this.state.results);
+                // console.log(this.state.results);
+                
+                data.push(this.state.results);
+                console.log(nytData);
             })
             .catch(err => console.log(err));
     };

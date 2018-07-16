@@ -1,12 +1,11 @@
 import React from "react";
-import Proptypes from "prop-types";
 import "./resultsbox.css";
-import List from "./List";
-import ListItem from "./List";
+import List from "../list/list";
+import ListItem from "../list/listItem";
 
 class ResultsBox extends React.Component {
     render () {
-        const { results } = this.props
+        
 
         return (
             <div>
