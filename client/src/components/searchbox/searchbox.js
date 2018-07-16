@@ -13,7 +13,7 @@ class SearchBox extends React.Component {
         }
     }
     render () {
-        const { topic, startYear, endYear, handleInputChange } = this.props;
+        const { topic, startYear, endYear } = this.props;
         
         return (
             <form>

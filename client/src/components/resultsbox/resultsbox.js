@@ -1,6 +1,8 @@
 import React from "react";
 import Proptypes from "prop-types";
 import "./resultsbox.css";
+import List from "./List";
+import ListItem from "./List";
 
 class ResultsBox extends React.Component {
     render () {
@@ -15,3 +17,5 @@ class ResultsBox extends React.Component {
         )
     }
 }
+
+export default ResultsBox;
