@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 
 //Requiring Mongoose for MongoDB
 const mongoose = require("mongoose");
-const articlesController = require("./nytscrubber/controllers/articlesControllers")
+const articlesController = require("./controllers/articlesControllers")
 mongoose.Promise = global.Promise;
 //Connecting to Mongoose
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/NYTReact");
@@ -22,7 +22,7 @@ const cheerio = require("cheerio");
 const axios = require("axios");
 
 //Require all models
-const db = require("./nytscrubber/models");
+const db = require("./models");
 
 const PORT = process.env.PORT || 8000;
 
