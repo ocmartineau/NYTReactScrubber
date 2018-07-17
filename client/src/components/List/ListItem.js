@@ -1,11 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import SaveButton from "../buttons/button";
-import DeleteButton from "../buttons/button";
+import Button from "../Button/Button";
 
 class ListItem extends React.Component {
     render () {
-        const {data, handleSaveArticle} = this.props
+        const {data, handleSaveArticle, handleDeleteArticle} = this.props
         return (
             <li className="list-group-item">
                 <div className="row">
@@ -14,8 +13,8 @@ class ListItem extends React.Component {
                     <h5>{data.author}</h5>
                     <div>{data.date}</div>
                     <p>{data.snippet}</p>
-                    <SaveButton/>
-                    <DeleteButton/>
+                    {handleSaveArticle && <Button text="Save" handleButton={handleSaveArticle}/>}
+                    {handleDeleteArticle && <Button text="Delete" handleButton={handleDeleteArticle}/>}
                     </div>
                 </div>
             </li>

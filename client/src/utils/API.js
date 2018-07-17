@@ -17,7 +17,7 @@ export default {
     },
     
     
-    getArticles: function() {
+    getSavedArticles: function() {
         return axios.get("/api/articles");
     },
     

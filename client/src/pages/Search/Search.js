@@ -5,7 +5,6 @@ import { List, ListItem } from "../../components/List";
 import TitleBox from "../../components/TitleBox";
 import SearchBox from "../../components/SearchBox";
 import ResultsBox from "../../components/ResultsBox";
-import SavedBox from "../../components/SavedBox";
 
 class Search extends React.Component {
     constructor(props) {
@@ -17,6 +16,8 @@ class Search extends React.Component {
           searchedArticles: [],
           savedArticles: []
         };
+
+        this.loadArticles();
     };
     
     handleTopicChange = event => {
@@ -32,29 +33,29 @@ class Search extends React.Component {
     };
 
     loadArticles = () => {
-      API.getArticles()
-      .then(res => this.setState({ Articles: res.data }))
+      API.getSavedArticles()
+      .then(res => this.setState({ savedArticles: res.data }))
       .catch(err => console.log(err));
     };
 
     handleSaveArticle = event => {
       event.preventDefault();
-      const clickedArticle = (this.state.results.filter(aiResults => apiResults._id === event.target.id)[0]);
+      // const clickedArticle = (this.state.results.filter(aiResults => apiResults._id === event.target.id)[0]);
 
-      API.saveArticle(clickedArticle)
-        .then(res => {
-          this.getSaved();
-        })
+      // API.saveArticle(clickedArticle)
+      //   .then(res => {
+      //     this.getSaved();
+      //   })
     };
 
     handleDeleteArticle = event => {
       event.preventDefault();
-      const clickedArticle = (this.state.results.filter(apiResults => apiResults._id === event.target.id)[0]);
+      // const clickedArticle = (this.state.results.filter(apiResults => apiResults._id === event.target.id)[0]);
 
-      API.deleteArticle(clickedArticle)
-        .then(res => {
-          this.getSaved();
-        })
+      // API.deleteArticle(clickedArticle)
+      //   .then(res => {
+      //     this.getSaved();
+      //   })
     };
 
     handleFormSubmit = event => {
@@ -64,8 +65,8 @@ class Search extends React.Component {
               if(res.status === "error") {
                   throw new Error(res.data.message);
               }
-              var apiResults = res.data.response.docs;
-              var results = apiResults.map(apiResult => {
+              let apiResults = res.data.response.docs;
+              let results = apiResults.map(apiResult => {
                 return {
                     id: apiResult._id,
                     title: apiResult.headline.main,
@@ -105,13 +106,13 @@ class Search extends React.Component {
             </Panel>  
 
             <Panel heading="Saved Articles">
-              <SavedBox>
-                <List/>
-              </SavedBox>
+                <ResultsBox results={this.state.savedArticles} handleDeleteArticle={this.handleDeleteArticle}>
+                    <List/>
+                </ResultsBox>
             </Panel>
           </div>
         );
     }
-};
+}
 
 export default Search;
