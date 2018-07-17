@@ -39,7 +39,7 @@ class Search extends React.Component {
 
     handleSaveArticle = event => {
       event.preventDefault();
-      const clickedArticle = (this.state.results.filter(element => element._id === event.target.id)[0]);
+      const clickedArticle = (this.state.results.filter(aiResults => apiResults._id === event.target.id)[0]);
 
       API.saveArticle(clickedArticle)
         .then(res => {
@@ -49,7 +49,7 @@ class Search extends React.Component {
 
     handleDeleteArticle = event => {
       event.preventDefault();
-      const clickedArticle = (this.state.results.filter(element => element._id === event.target.id)[0]);
+      const clickedArticle = (this.state.results.filter(apiResults => apiResults._id === event.target.id)[0]);
 
       API.deleteArticle(clickedArticle)
         .then(res => {

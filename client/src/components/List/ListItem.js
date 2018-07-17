@@ -14,6 +14,8 @@ class ListItem extends React.Component {
                     <h5>{data.author}</h5>
                     <div>{data.date}</div>
                     <p>{data.snippet}</p>
+                    <SaveButton/>
+                    <DeleteButton/>
                     </div>
                 </div>
             </li>
