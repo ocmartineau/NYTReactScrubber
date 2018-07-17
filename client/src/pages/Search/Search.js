@@ -31,6 +31,12 @@ class Search extends React.Component {
         this.setState({ endYear: event.target.value });
     };
 
+    loadArticles = () => {
+      API.getArticles()
+      .then(res => this.setState({ Articles: res.data }))
+      .catch(err => console.log(err));
+    };
+
     handleSaveArticle = event => {
       event.preventDefault();
       const clickedArticle = (this.state.results.filter(element => element._id === event.target.id)[0]);
@@ -42,9 +48,14 @@ class Search extends React.Component {
     };
 
     handleDeleteArticle = event => {
-      API.deleteArticle().
-      then
-    }
+      event.preventDefault();
+      const clickedArticle = (this.state.results.filter(element => element._id === event.target.id)[0]);
+
+      API.deleteArticle(clickedArticle)
+        .then(res => {
+          this.getSaved();
+        })
+    };
 
     handleFormSubmit = event => {
       event.preventDefault();
