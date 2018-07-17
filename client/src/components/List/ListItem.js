@@ -5,16 +5,15 @@ import DeleteButton from "../buttons/button";
 
 class ListItem extends React.Component {
     render () {
-        const {nytData} = this.props
+        const {data, handleSaveArticle} = this.props
         return (
             <li className="list-group-item">
                 <div className="row">
                     <div className="col-md-11">
-                    <h4>{nytData.headline.main}</h4>
-                    <h5>{nytData.byline.original}</h5>
-                    <a href={nytData.web_url}>{nytData.web_url}</a>
-                    <div>{nytData.pub_date}</div>
-                    <p>{nytData.snippet}</p>
+                    <a href={data.url} target="_blank"><h4>{data.title}</h4></a>
+                    <h5>{data.author}</h5>
+                    <div>{data.date}</div>
+                    <p>{data.snippet}</p>
                     </div>
                 </div>
             </li>

@@ -1,13 +1,14 @@
 import React from "react";
-import "./titlebox.css";
+import "./TitleBox.css";
 
 class TitleBox extends React.Component {
     render () {
+        const { title, subtitle } = this.props
         return (
             <div className="jumbotron jumbotron-fluid">
                 <div className="container">
-                    <h1 className="display-4">New York Times React Scraper</h1>
-                    <p className="lead">Search your articles and save them.</p>
+                    <h1 className="display-4">{title}</h1>
+                    <p className="lead">{subtitle}</p>
                 </div>
             </div>
         )

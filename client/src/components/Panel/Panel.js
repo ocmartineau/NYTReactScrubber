@@ -1,5 +1,5 @@
 import React from "react";
-import "./panel.css";
+import "./Panel.css";
 
 const Panel = props => (
   <div className="panel panel-default text-center">

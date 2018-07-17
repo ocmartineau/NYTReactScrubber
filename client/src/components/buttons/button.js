@@ -6,7 +6,7 @@ class SaveButton extends React.Component {
     render () {
         return (
             <button type="button">
-                {props.children}
+                {this.props.children}
                 {/* onClick={this.handleArticleSave} */}
                 Save Article
             </button>
@@ -20,7 +20,7 @@ class DeleteButton extends React.Component {
     render () {
         return (
             <button type="button">
-                {props.children}
+                {this.props.children}
                 {/* onClick={this.handleArticleDelete} */}
                 Delete Article
             </button>

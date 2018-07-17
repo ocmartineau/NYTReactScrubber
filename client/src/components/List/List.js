@@ -1,16 +1,17 @@
 import React from "react";
-import "./list.css";
+import "./List.css";
 import PropTypes from "prop-types";
-import ListItem from "../list/listItem";
+import ListItem from "../List/ListItem";
 
 class List extends React.Component {
     render () {
+        const { results, handleSaveArticle}  = this.props
         return (
             <div className="list-overflow-container">
-                
                 <ul className="list-group">
-                    {this.props.children}
-                    <ListItem/>
+                    {results.map(result =>
+                        <ListItem  key={result.id} data={result} handleSaveArticle={handleSaveArticle} />
+                    )}
                 </ul>
 
             </div>

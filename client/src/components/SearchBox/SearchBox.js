@@ -1,27 +1,18 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import "./searchbox.css";
+import "./SearchBox.css";
 import API from "../../utils/API";
 
 class SearchBox extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state ={
-            topic: "",
-            startYear: "",
-            endYear: ""
-        }
-    }
     render () {
-        const { topic, startYear, endYear } = this.props;
-        
+        const { topic, startYear, endYear, handleTopicChange, handleStartYearChange, handleEndYearChange, handleFormSubmit } = this.props;
         return (
             <form>
                 <div className="form-group">
                     <label>Topic:</label>
                         <input  
                         value={topic}
-                        onChange={this.handleTopicChange}
+                        onChange={handleTopicChange}
                         name="topic"
                         type="text" 
                         className="form-control"
@@ -32,7 +23,7 @@ class SearchBox extends React.Component {
                     <label>Start Year:</label>
                         <input 
                         value={startYear}
-                        onChange={this.handleStartYearChange}
+                        onChange={handleStartYearChange}
                         name="start year"
                         type="text" 
                         className="form-control"
@@ -42,7 +33,7 @@ class SearchBox extends React.Component {
                     <label>End Year:</label>
                         <input 
                         value={endYear}
-                        onChange={this.handleEndYearChange}
+                        onChange={handleEndYearChange}
                         name="end year"
                         type="text" 
                         className="form-control"
@@ -50,7 +41,7 @@ class SearchBox extends React.Component {
                         />
                     
                     <button 
-                        onClick={this.handleFormSubmit}
+                        onClick={handleFormSubmit}
                         type="submit" 
                         className="btn btn-primary">
                         Submit
@@ -59,37 +50,6 @@ class SearchBox extends React.Component {
             </form>
         );
     }
-
-    
-    handleTopicChange = event => {
-        this.setState({ topic: event.target.value });
-    };
-
-    handleStartYearChange = event => {
-        this.setState({ startYear: event.target.value });
-    };
-
-    handleEndYearChange = event => {
-        this.setState({ endYear: event.target.value });
-    };
-
-    handleFormSubmit = event => {
-        const nytData = [];
-        console.log("it's running");
-        event.preventDefault();
-        API.getArticles(this.state.topic, this.state.startYear, this.state.endYear)
-            .then(res => {
-                if(res.status === "error") {
-                    throw new Error(res.data.message);
-                }
-                this.setState({ results: res.data.response.docs });
-                // console.log(this.state.results);
-                
-                data.push(this.state.results);
-                console.log(nytData);
-            })
-            .catch(err => console.log(err));
-    };
 }
 
 SearchBox.props = {
