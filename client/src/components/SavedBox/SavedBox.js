@@ -1,4 +1,5 @@
 import React from "react";
+import API from "../../utils/API";
 
 class SavedBox extends React.Component {
     constructor(props) {
@@ -8,6 +9,27 @@ class SavedBox extends React.Component {
         };
     }
 
+    componentDidMount() {
+        this.getSaved();
+    }
+    
+    getSaved = () => {
+        API.getArticles()
+          .then(res =>
+            this.setState({
+              articles: res.data
+            })
+          )
+          .catch(err => console.log(err));
+    };
+
+    deleteArticle = id => {
+        API.deleteArticle(id)
+          .then((res => this.getSaved()))
+          .catch(err => console.log(err));
+    };
+
+    
     render() {
         return "";
     }

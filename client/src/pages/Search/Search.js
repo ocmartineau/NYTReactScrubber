@@ -32,9 +32,14 @@ class Search extends React.Component {
     };
 
     handleSaveArticle = event => {
-      API.saveArticle()
-        .then
-    }
+      event.preventDefault();
+      const clickedArticle = (this.state.results.filter(element => element._id === event.target.id)[0]);
+
+      API.saveArticle(clickedArticle)
+        .then(res => {
+          this.getSaved();
+        })
+    };
 
     handleDeleteArticle = event => {
       API.deleteArticle().

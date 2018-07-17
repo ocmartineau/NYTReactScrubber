@@ -12,18 +12,16 @@ export default {
                 
     },
     
-
-    // saveArticle: (data) => {
-    //     console.log("Saving ${articleData}...");
-    //     const articleData = {
-    //         title: data.headline.main,
-    //         author: data.byline.original,
-    //         date: data.pub_date,
-    //         snippet: data.snippet,
-    //         URL: data.web_url
-    //     };
-    //     return (axios.post("api/article", articleData))
-    // }
-
-
+    saveArticle: function(articleData) {
+        return axios.post("/api/articles", articleData);
+    },
+    
+    
+    getArticles: function() {
+        return axios.get("/api/articles");
+    },
+    
+    deleteArticle: function(id) {
+        return axios.delete("api/articles/" + id);
+    }
 };
